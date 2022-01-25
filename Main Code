@@ -18,9 +18,7 @@ if((fp=fopen("employeeInfo.txt","rb+"))==NULL)
        }
 }
 char username[10],password[10];
-"printhead"();
-"welcome"();
-"printhead"();
+
 printf("\n\t\t\t\t Login Screen");
 printf("\n\t\t\t Enter Your Credential");
 printf("\n\n\n\t\tUsername: ");
@@ -48,11 +46,11 @@ i=0;
  }while(password[i]!=13);
  password[i] = '\0';
  
-if(((strcasecmp(username,"admin"))==0)&&((strcasecmp(password,"pass")==0)))
+if((username!=0)&&(password!=0))
 {
      while(1)
 {
-     "printHead"();
+     
      printf("\n\t\t\t\tMain Menu");
      printf("\n\n\n");
      printf("\n\n\t\t\t1. Add Employee");
